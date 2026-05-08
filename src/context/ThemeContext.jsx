@@ -10,7 +10,7 @@ function getInitialTheme(){
 
     if(saved==='light' || saved ==='dark') return saved
 
-    return window.matchMedia("(prefer-color-scheme:dark)").matches? 'dark':'light'
+    return window.matchMedia("(prefer-color-scheme: dark)").matches? 'dark':'light'
 }
 
 export function ThemeProvider({children}){
