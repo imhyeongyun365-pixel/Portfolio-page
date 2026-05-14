@@ -3,6 +3,23 @@
     align-items: center;
     height: 100vh;
 
+    h1 {
+        
+        
+
+        span.main-title_1 {
+            color: #8766FF;
+        }
+
+        span.main-title_2 {
+            color: #4F46E5;
+        }
+
+        span.main-title_3 {
+            color: #61AAE5;
+        }
+    }
+
     p.txt {
         position: absolute;
         text-align: right;
@@ -18,10 +35,5 @@
                 }
     }
 
-    .arrow {
-        position: absolute;
-        bottom: 3rem;
-        left: calc(50% - 1.5rem);
-        animation: up 1s infinite alternate ease-in-out;
-    }
+  
 }

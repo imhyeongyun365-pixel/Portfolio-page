@@ -1,0 +1,27 @@
+.theme-toggle {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+
+  .theme-icon {
+    width: 22px;
+    height: 22px;
+  }
+
+  &.dark {
+    background: #0d1b73;
+  }
+
+  &.light {
+    background: #7be3ff;
+  }
+}

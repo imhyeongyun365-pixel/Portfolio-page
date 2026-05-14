@@ -3,6 +3,7 @@ import Nav from "./Nav"
 import "./styles/Header.scss"
 import { useTheme } from '../../context/ThemeContext'
 import FixedTop from './FixedTop'
+import ThemeToggle from './ThemeToggle'
 const Header = () => {
   const { theme, toggleTheme } = useTheme()
   const [scrolled, setScrolled] = useState(false)
@@ -42,7 +43,10 @@ const Header = () => {
             <span>3</span>
           </button>
           <Nav />
-          <button className='btn' onClick={toggleTheme}>{theme}</button>
+          
+            <ThemeToggle className='btn' onClick={toggleTheme}>
+            {theme}
+            </ThemeToggle>
 
         </div>
       </div>
