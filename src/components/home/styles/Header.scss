@@ -4,6 +4,8 @@ header {
     width: 100%;
     transition: all .3s;
     padding: 0 .21rem;
+    border-bottom: 1px solid #1F2937;
+
     .fixed-top {
         position: fixed;
         right: 2rem;
@@ -31,11 +33,13 @@ header {
 
 
     .inner {
+        // width: 1440px;
         display: flex;
         border-bottom: .1rem solid transparent;
         justify-content: space-between;
         align-items: center;
         padding: 1rem 0;
+        
 
         h4 {
             font-size: clamp(1.8rem, 2.2vw, 2.4rem);

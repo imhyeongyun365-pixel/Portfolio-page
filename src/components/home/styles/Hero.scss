@@ -1,39 +1,92 @@
 .inner.hero-inner {
     display: flex;
+    justify-content: center;
     align-items: center;
     height: 100vh;
+    gap: 10rem;
+    
 
-    h1 {
+    .intro-me {
         
-        
-
-        span.main-title_1 {
-            color: #8766FF;
+        img {
+            width: 265px;
+            height: 355px;
         }
 
-        span.main-title_2 {
-            color: #4F46E5;
+        .myspack {
+            padding-top: 20px;
+            display: flex;
+            justify-content: center;
+            margin-top: .33rem;
+            gap: 2rem;
         }
 
-        span.main-title_3 {
-            color: #61AAE5;
+        .spack {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            gap: 1rem;
+            .spack-num {
+                color: var(--spack-num);
+                font-size: 2.5rem;
+                font-weight: 600;
+            }
+
+            .spack-name {
+                color: var(--spack-name);
+            }
         }
     }
-
-    p.txt {
-        position: absolute;
-        text-align: right;
-        right: 2rem;
-        bottom: 10rem;
-
-        @media screen and (max-width:599px) {
-            font-size: 1.6rem;
-            // width:50%;
-        }
-                @media screen and (max-width:399px) {
-                    display: none;
+    
+    .intro-title{
+        
+        h1.tit {
+            
+            
+            span.main-title_1 {
+                color: #8766FF;
+            }
+            
+            span.main-title_2 {
+                color: #4F46E5;
+            }
+            
+            span.main-title_3 {
+                color: #61AAE5;
+                position: relative;
+                
+                &:after{
+                    display: block;
+                    content: "";
+                    position: absolute;
+                    width: 50px;
+                    height: 50px;
+                    left: -40px;
+                    top: -20px;
+                    
+                    background-image: url(../../../assets/hero-title-iconstar.svg);
+                    background-repeat: no-repeat;
+                    background-size: contain;
                 }
+            }
+        }
+    
+        p.txt {
+            position: absolute;
+            text-align: right;
+            right: 2rem;
+            bottom: 10rem;
+    
+            @media screen and (max-width:599px) {
+                font-size: 1.6rem;
+                // width:50%;
+            }
+                    @media screen and (max-width:399px) {
+                        display: none;
+                    }
+        }
     }
+
 
   
 }

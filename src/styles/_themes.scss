@@ -11,11 +11,19 @@ $neutral: (
   900: #1a1a1a
 );
 
+/*아이콘*/
+$hero: (
+  bg:#FFFF60
+
+);
+
 /* 라이트/다크 공통 변수 정의 */
 $light: (
   bg: #fcfcfc,
   text: #0f0f0f,
   header-Btn: #56EEFF,
+  spack-num: #111827,
+  spack-name: #8B949E,
   primary: #47FF97,
   primary200: #25d873,
   underline:#d8d8d8,
@@ -36,6 +44,8 @@ $dark: (
   bg: #0D1117,
   text: #f0f0f0,
   header-Btn: #0E1453,
+  spack-num: #F0F6FF,
+  spack-name: #8B949E,
   primary: #47FF97,
   primary200: #25d873,
   underline:#2b2b2b,
