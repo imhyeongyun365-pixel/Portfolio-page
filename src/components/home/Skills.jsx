@@ -27,8 +27,7 @@ const Skills = () => {
         transition: { duration: .45, ease: [.22, 1, .36, 1] }
     }
     return (
-        <div className="skills_section">
-            <div className="inner">
+            <div className="inner skills-inner">
                 <header className="hero">
                     <span className="`badge badge__green ${badge}`">
                         <SparkleIcon />
@@ -97,7 +96,6 @@ const Skills = () => {
 
                 </section>
             </div>
-        </div>
     )
 }
 

@@ -1,9 +1,12 @@
 @use '../../../styles/themes' as *;
 
-.skills_section {
+#Skills {
     padding: $space-5 0 $space-10;
     background: var(--color-bg-muted);
     transition: $transition-theme;
+    .inner.skills-inner {
+      max-width: 144rem;
+    }
 }
 
 .hero {
