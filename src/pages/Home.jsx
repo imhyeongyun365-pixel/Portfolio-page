@@ -17,13 +17,13 @@ const Home = () => {
         <section id='Hero'>
           <Hero />
         </section>
-        <section id='skills'>
+        <section id='Skills'>
           <Skills/>
         </section>
-        <section id='project'>
+        <section id='Project'>
           <Project />
         </section>
-        <section id='contact'>
+        <section id='Contact'>
           <Contact />
         </section>
 

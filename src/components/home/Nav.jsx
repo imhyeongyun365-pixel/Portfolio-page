@@ -1,7 +1,7 @@
 import React from 'react'
 import useSmoothScroll from '../../hook/useSmoothScroll'
 const Nav = () => {
-  const navLink = ['소개', '기술', '프로젝트', '연락처']
+  const navLink = ['Hero', 'Skills', 'Project', 'Contact']
 
   const scrollTo = useSmoothScroll()
   return (

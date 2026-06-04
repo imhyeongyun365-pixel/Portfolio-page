@@ -1,3 +1,132 @@
+@import url(https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css);
+$base-unit: 1rem; // 10px 기준
+$font-sans: 'SUIT Variable', 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+$font-size-xs: 1.2rem; // 12px
+$font-size-sm: 1.4rem; // 14px
+$font-size-md: 1.6rem; // 16px
+$font-size-lg: 1.8rem; // 18px
+$font-size-xl: 2rem; // 20px
+$font-size-2xl: 2.4rem; // 24px
+$font-size-3xl: 3.2rem; // 32px
+
+
+$space-0: 0.4rem; // 8px
+$space-1: 0.8rem; // 8px
+$space-2: 1.2rem; // 12px
+$space-3: 1.6rem; // 16px
+$space-4: 2.4rem; // 24px
+$space-5: 3.2rem; // 32px
+$space-6: 4rem; // 40px
+$space-8: 4.8rem; // 48px
+$space-10: 6.4rem; // 64px
+$space-12: 8rem; // 80px
+$space-16: 10rem; // 100px
+$space-20: 12rem; // 120px
+$space-24: 16rem; // 160px
+
+
+
+$radius-sm: 1rem;
+$radius-md: 2rem;
+$radius-lg: 3rem;
+$radius-xl: 4rem;
+$radius-full: 9999px;
+
+
+$color-primary: #7c3aed;
+$color-primary-hover: #5b1cc0;
+
+
+$color-bg: #ffffff;
+$color-bg-muted: #f8fafc;
+$color-card-bg: #ffffff;
+$color-border: #e2e8f0;
+$color-text: #0f172a;
+$color-text-muted: #64748b;
+
+$btn-primary-bg: $color-primary;
+$btn-primary-text: #ffffff;
+$color-success: #10b981;
+$color-info: #3b82f6;
+$color-warning: #f59e0b;
+$color-danger: #ef4444;
+
+$shadow-sm: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.05);
+$shadow-md: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.1);
+$shadow-lg: 0 1rem 2.5rem rgba(0, 0, 0, 0.15);
+
+$breakpoint-sm: 50rem;
+$breakpoint-md: 76.8rem;
+$breakpoint-lg: 102.4rem;
+$breakpoint-xl: 128rem;
+$breakpoint-2xl: 160rem;
+
+
+$transition-theme: color 0.2s ease, background-color 0.2s ease,
+  border-color 0.2s ease, box-shadow 0.2s ease;
+
+:root {
+  color-scheme: light;
+  --color-bg: #ffffff;
+  --color-bg-muted: #f9fafb;
+  --color-text: #111827;
+  --color-text-muted: #4b5563;
+  --color-border: #e5e7eb;
+  --color-card-bg: #ffffff;
+  --color-header-bg: rgba(255, 255, 255, 0.85);
+  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.06);
+  --shadow-md: 0 4px 12px rgba(15, 23, 42, 0.08);
+
+  --color-primary: #{$color-primary};
+  --color-success: #{$color-success};
+  --color-info: #{$color-info};
+  --color-warning: #{$color-warning};
+
+  --btn-primary-bg: var(--color-primary);
+  --btn-primary-text: #ffffff;
+  --btn-outline-border: var(--color-border);
+  --btn-outline-text: var(--color-text);
+
+  --gray-50: #f9fafb;
+  --gray-100: #f3f4f6;
+  --gray-200: #e5e7eb;
+  --gray-300: #d1d5db;
+  --gray-400: #9ca3af;
+  --gray-500: #6b7280;
+  --gray-600: #4b5563;
+  --gray-700: #374151;
+  --gray-800: #1f2937;
+  --gray-900: #111827;
+
+}
+
+[data-theme='dark'] {
+  color-scheme: dark;
+  --color-bg: #0f172a;
+  --color-bg-muted: #1e293b;
+  --color-text: #f8fafc;
+  --color-text-muted: #94a3b8;
+  --color-border: #334155;
+  --color-card-bg: #1e293b;
+  --color-header-bg: rgba(15, 23, 42, 0.9);
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.35);
+
+  --btn-outline-border: var(--color-border);
+  --btn-outline-text: var(--color-text);
+  --gray-50: #020617;
+  --gray-100: #0f172a;
+  --gray-200: #1e293b;
+  --gray-300: #334155;
+  --gray-400: #475569;
+  --gray-500: #64748b;
+  --gray-600: #94a3b8;
+  --gray-700: #cbd5f5;
+  --gray-800: #e2e8f0;
+  --gray-900: #f8fafc;
+}
+
 $font-size-xs: 1.2rem; // 12px
 $font-size-sm: 1.4rem; // 14px
 $font-size-md: 1.6rem; // 16px
@@ -78,7 +207,6 @@ $neutral: (
 /*아이콘*/
 $hero: (
   bg:#FFFF60
-
 );
 
 /* 라이트/다크 공통 변수 정의 */
