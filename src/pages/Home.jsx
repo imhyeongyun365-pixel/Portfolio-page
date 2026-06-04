@@ -1,30 +1,32 @@
 import React from 'react'
 import Hero from '../components/home/Hero'
-import Aboutme from '../components/home/Aboutme'
+
 import Header from '../components/home/Header'
-import Work from '../components/home/Work'
-import Contact from '../components/home/Contact'
+
 import Footer from '../components/home/Footer'
+import Skills from '../components/home/Skills'
+import Project from '../components/home/Project'
+import Contact from '../components/home/Contact'
 const Home = () => {
   
 
   return (
     <div>
-    
       <Header />
       <main>
         <section id='Hero'>
           <Hero />
         </section>
-        <section id="Aboutme">
-          <Aboutme />
+        <section id='skills'>
+          <Skills/>
         </section>
-        <section id="Work">
-          <Work />
+        <section id='project'>
+          <Project />
         </section>
-        <section id="Contact">
+        <section id='contact'>
           <Contact />
         </section>
+
       </main>
       <Footer />
     </div>
@@ -32,3 +34,7 @@ const Home = () => {
 }
 
 export default Home
+
+
+
+
