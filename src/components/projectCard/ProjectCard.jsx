@@ -5,12 +5,17 @@ const ProjectCard = ({
     title,
     description,
     tags = [],
+    image,
     imageAlt = ''
 }) => {
     return (
         <article className="card">
-            <div className="thumb" role='img' aria-label={imageAlt || title} />
-
+            <div className="thumb">
+                <img 
+                        src={image} 
+                        alt={imageAlt || title} 
+                    />
+            </div>
             <div className="body">
                 <div className="tags">
                     {tags.map(({ label, variant }) => (

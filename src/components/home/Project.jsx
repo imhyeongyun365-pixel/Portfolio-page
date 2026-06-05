@@ -32,11 +32,15 @@ const Project = () => {
     
       <div className="inner projects-inner">
 
-
-        
+       
         <h1 className="tit tit__">
           MINI Project
         </h1>
+
+       
+
+      
+        
         <Motion.div
           variants={containerVariants}
           initial="hidden"
@@ -53,7 +57,7 @@ const Project = () => {
                 {...p}
               />
 
-             
+    
             </Motion.div>
           ))}
         </Motion.div>
