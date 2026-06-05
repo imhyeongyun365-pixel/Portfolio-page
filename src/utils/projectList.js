@@ -1,11 +1,12 @@
 export const projectList = [
     {
-        title: 'Project Alpha',
-        description: 'Short description placeholder for the first featured project.',
+        title: '타이머',
+        description: '온라인에서 타이머를 사용할 수 있는 사이트',
         tags: [
             { label: 'React', variant: 'neutral' },
             { label: 'Node', variant: 'info' },
         ],
+        
     },
     {
         title: 'Project Beta',
@@ -14,6 +15,7 @@ export const projectList = [
             { label: 'TypeScript', variant: 'neutral' },
             { label: 'Testing', variant: 'success' },
         ],
+        
     },
     {
         title: 'Project Gamma',

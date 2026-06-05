@@ -33,20 +33,7 @@ export const skillCategories = [
         ],
         tags: ['Node.js', 'PostgreSQL', 'Redis', 'Prisma', 'REST'],
     },
-    {
-        key: 'testing',
-        iconKey: 'flask',
-        iconColor: 'var(--color-primary)',
-        accent: 'testing',
-        title: 'Testing & quality',
-        subtitle: 'Automated checks that protect refactors and speed up delivery.',
-        skills: [
-            { name: 'Jest / Vitest', percent: 90, showPercent: false },
-            { name: 'Cypress / Playwright', percent: 85, showPercent: false },
-            { name: 'Storybook', percent: 78, showPercent: false },
-        ],
-        tags: ['Jest', 'Playwright', 'Storybook', 'CI checks'],
-    },
+   
     {
         key: 'devops',
         iconKey: 'cloud',

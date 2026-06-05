@@ -66,7 +66,7 @@ const Skills = () => {
                         )
                     })}
                 </div>
-                <section className="certSection" aria-labelledby='certs-heading'>
+                {/* <section className="certSection" aria-labelledby='certs-heading'>
                     <div className="certHeader">
                         <h2 id='certs-heading' className="certTitle">
                             Certifications
@@ -94,7 +94,7 @@ const Skills = () => {
                     ))}
                     </div>
 
-                </section>
+                </section> */}
             </div>
     )
 }

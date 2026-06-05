@@ -29,10 +29,13 @@ const itemVariants = {
 
 const Project = () => {
   return (
-    <section className="project_section" aria-labelledby='project-heading'>
-      <div className="`inner ${inner}`">
-        <h1 className="tit tit__m">
-          Projects I&apos;m proud of
+    
+      <div className="inner projects-inner">
+
+
+        
+        <h1 className="tit tit__">
+          MINI Project
         </h1>
         <Motion.div
           variants={containerVariants}
@@ -49,12 +52,14 @@ const Project = () => {
               <ProjectCard
                 {...p}
               />
+
+             
             </Motion.div>
           ))}
         </Motion.div>
       </div>
 
-    </section>
+    
   )
 }
 

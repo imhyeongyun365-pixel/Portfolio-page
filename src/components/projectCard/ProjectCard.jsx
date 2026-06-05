@@ -25,10 +25,10 @@ const ProjectCard = ({
                 </p>
                 <div className="styles">
                     <button className='btn btn__primary btn__md'>
-                            Live demo
+                            View
                     </button>
                     <button className='btn btn__outline btn__md'>
-                            View code
+                            Code
                     </button>
                 </div>
             </div>

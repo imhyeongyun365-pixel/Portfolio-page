@@ -39,17 +39,17 @@ const FeaturedProjectCard = ({
 
   return (
     <article className='card'>
-      <div className={`${visual} ${gradientClass}`} aria-hidden>
-        <div className={chrome}>
-          <span className={dot} />
-          <span className={dot} />
-          <span className={dot} />
+      <div className='`${visual} ${gradientClass}` aria-hidden'>
+        <div className='chrome'>
+          <span className='dot' />
+          <span className='dot' />
+          <span className='dot' />
         </div>
-        <div className={mockContent} />
+        <div className='mockContent' />
       </div>
-      <div className={body}>
-        <div className={topRow}>
-          <div className={tags}>
+      <div className='body'>
+        <div className='topRow'>
+          <div className='tags'>
             {tags.map(({ label, variant }) => (
               <Tag variant={variant} key={label}>
                 {label}
@@ -58,23 +58,23 @@ const FeaturedProjectCard = ({
           </div>
           {status ? (
             <span
-              className={`${status} ${status.type == 'live' ? status_live : styles.status_featured}`}
+              className="`${status} ${status.type == 'live' ? status_live : styles.status_featured}`"
             >
               {status.type == 'live' ? <span className={statusDot} aria-hidden /> : null}
               {status.label}
             </span>
           ) : null}
         </div>
-        <h3 className={title}>{title}</h3>
-        <p className={desc}>{description}</p>
+        <h3 className="title">{title}</h3>
+        <p className="desc">{description}</p>
         {meta.length > 0 ? (
-          <div className={meta}>
+          <div className="meta">
             {meta.map(({ type, text }) => {
               const MetaIcon = META_ICONS[type] ?? IconStar
 
               return (
-                <span key={`${type}-${text}`} className={metaItem}>
-                  <span className={metaIcon}>
+                <span key={`${type}-${text}`} className="metaItem">
+                  <span className="metaIcon">
                     <MetaIcon />
                   </span>
                   {text}
@@ -84,12 +84,12 @@ const FeaturedProjectCard = ({
           </div>
         ) : null}
 
-        <div className={actions}>
-          <a href={demoHref} className={`btn btn__primary ${btnPrimary}`}>
+        <div className="actions">
+          <a href={demoHref} className="`btn btn__primary ${btnPrimary}`">
             <IconExternal/>
             {demoLabel}
           </a>
-          <a href={demoHref} className={`btn btn__outline ${btnOutline}`}>
+          <a href={demoHref} className="`btn btn__outline ${btnOutline}`">
             <IconGithub/>
           </a>
         </div>

@@ -15,7 +15,7 @@ const CategoryCard = ({
     return (
         <article
             style={iconColor ? { ['--icon-color']: iconColor } : undefined}
-            className="card"
+            className="category_card"
         >
             <div className="head">
                 {icon ? <div className="iconWrap">{icon}</div> : null}
