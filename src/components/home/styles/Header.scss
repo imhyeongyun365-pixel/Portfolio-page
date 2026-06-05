@@ -4,8 +4,8 @@ header {
     width: 100%;
     transition: all .3s;
     padding: 0 .21rem;
-    border-bottom: 1px solid #1F2937;
-
+    border-bottom: .1rem solid transparent;
+    
     .fixed-top {
         position: fixed;
         right: 2rem;
@@ -16,13 +16,13 @@ header {
         transform: translateY(3rem);
         opacity: 0;
     }
-
+    
     &.scroll {
-        background-color: var(--bg);
+        border-bottom: .1rem solid var(--gray200);
+        background-color:#ffffffb0;
+        backdrop-filter: blur(10px);
 
-        .inner {
-            border-bottom: .1rem solid var(--underline);
-        }
+
 
         .fixed-top {
             opacity: 1;

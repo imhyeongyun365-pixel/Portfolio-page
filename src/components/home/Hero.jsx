@@ -4,7 +4,10 @@ const Hero = () => {
   return (
     <div className='inner hero-inner'>
       <div className='intro-me'>
-        <img src="src\assets\hero-myphoto.jpg" alt="photo" />
+        <div className="img-wrap">
+        <img src="./hero-myphoto.jpg" alt="photo" />
+
+        </div>
         <ul className='myspack'>
           <li className='spack work'>
             <span className='spack-num'>3+</span>
@@ -25,6 +28,10 @@ const Hero = () => {
         </ul>
       </div>
       <div className='intro-title'>
+          <span className='main-sub_1'>
+            현대적이고 성능 좋은 애플리케이션을 <br />
+            만들기 위해 사용하는 기술
+          </span>
         <h1 className="tit">
           <span className='main-title_1'>
           Full-Stack Delveloper
