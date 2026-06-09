@@ -1,6 +1,6 @@
 
 @use '../../styles/themes' as *;
-.card {
+.mini-card {
     width: 450px;
     height: 600px;
     display: flex;
@@ -12,31 +12,36 @@
     transition: $transition-theme;
     border-radius: $radius-md;
     padding: 2rem;
-    .thumb{
+    .mini-thumb{
         aspect-ratio: 16 / 10;
+        width: 100%;
+        overflow: hidden;
         background: linear-gradient(
             135deg,
             var(--color-bg-muted),
             var(--color-border)
         );
+
+        
+    
     }
-    .body {
+    .mini-body {
         display: flex;
         flex: 1;
         flex-direction: column;
         gap:$space-1;
         padding:$space-3;
-        .tags {
+        .mini-tags {
             display: flex;
             gap: $space-1;
             flex-wrap: wrap;             
         }
-        .desc {
+        .mini-desc {
             font-size: $font-size-sm;
             color:var(--color-text-muted);
             min-height: 5rem;
         }
-        .cta {
+        .mini-cta {
             gap: $space-1;
             display: flex;
             margin-top: $space-1;

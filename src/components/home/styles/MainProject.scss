@@ -1,0 +1,29 @@
+@use '../../../styles/themes' as *;
+
+
+    
+    
+
+    .inner {
+        
+        background-color: var(--color-bg-muted);
+        transition: $transition-theme;
+        padding: $space-12 0;
+        
+        .Main-grid {
+            
+            display: flex;
+            flex-direction: column;
+            gap: $space-5;
+            margin-top: $space-3;
+            grid-template-columns: 1fr;
+            @media (min-width:768px){
+                grid-template-columns: repeat(2,1fr);
+                
+            }
+            @media (min-width:1024px){
+                grid-template-columns: repeat(3,1fr);
+                
+            }
+        }
+    }

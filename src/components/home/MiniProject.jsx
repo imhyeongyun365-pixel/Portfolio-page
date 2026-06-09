@@ -1,8 +1,8 @@
 import React from 'react'
-import './styles/Project.scss'
-import { projectList } from '../../utils/projectList'
+import './styles/MiniProject.scss'
+import { miniprojectList } from '../../utils/miniprojectList'
 import { motion as Motion, scale } from 'framer-motion'
-import ProjectCard from '../projectCard/ProjectCard'
+import ProjectCard from '../projectCard/MiniProjectCard'
 const containerVariants = {
   hidden: {},
   show: {
@@ -47,7 +47,7 @@ const Project = () => {
           whileInView="show"
           viewport={{ amount: .2 }}
           className="grid">
-          {projectList.map((p) => (
+          {miniprojectList.map((p) => (
             <Motion.div
               key={p.title}
               variants={itemVariants}

@@ -2,9 +2,9 @@ import miniprojectTimer from '../assets/miniproject-timer.png'
 import miniprojectWeather from '../assets/miniproject-weather.png'
 import miniprojectWiFiSpot from '../assets/miniproject_Wi-Fi_Spot.png'
 import miniprojectLanguageGame from '../assets/miniproject-language_game.png'
+import miniprojectAreaSearch from '../assets/miniproject-areaSearch.png'
 
-
-export const projectList = [
+export const miniprojectList = [
     {
         title: '타이머',
         description: '온라인에서 타이머를 사용할 수 있는 사이트',
@@ -44,6 +44,16 @@ export const projectList = [
         ],
         image: miniprojectLanguageGame,
         imageAlt:'끝말잇기 프로젝트 화면',
+    },
+    {
+        title: '지역검색',
+        description: '파이썬(Python)으로 Naver API를 활용한 지역검색 사이트',
+        tags: [
+            { label: 'DevOps', variant: 'warning' },
+            { label: 'Cloud', variant: 'info' },
+        ],
+        image: miniprojectAreaSearch,
+        imageAlt:'지역검색 프로젝트 화면',
     },
 ]
 
