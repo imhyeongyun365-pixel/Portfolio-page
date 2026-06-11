@@ -3,6 +3,7 @@ import miniprojectWeather from '../assets/miniproject-weather.png'
 import miniprojectWiFiSpot from '../assets/miniproject_Wi-Fi_Spot.png'
 import miniprojectLanguageGame from '../assets/miniproject-language_game.png'
 import miniprojectAreaSearch from '../assets/miniproject-areaSearch.png'
+import miniprojectMovieReview from '../assets/miniproject-pythonFastAPI.png'
 
 export const miniprojectList = [
     {
@@ -54,6 +55,16 @@ export const miniprojectList = [
         ],
         image: miniprojectAreaSearch,
         imageAlt:'지역검색 프로젝트 화면',
+    },
+    {
+        title: '영화리뷰',
+        description: 'AI코딩으로 활용하여 자신이 본 영화를 감성평(리뷰)를 작성하고 등록하는 사이트',
+        tags: [
+            { label: 'DevOps', variant: 'warning' },
+            { label: 'Cloud', variant: 'info' },
+        ],
+        image: miniprojectMovieReview,
+        imageAlt:'AI코딩을 활용한 영화리뷰 프로젝트 화면',
     },
 ]
 
