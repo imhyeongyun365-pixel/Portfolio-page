@@ -28,16 +28,12 @@ const Skills = () => {
     }
     return (
             <div className="inner skills-inner">
-                <header className="hero">
-                    <span className="`badge badge__green ${badge}`">
-                        <SparkleIcon />
-                        Tech stack
-                    </span>
-                    <h1 className="tit">Technologies I use</h1>
-                    <p className="txt">
-                        A curated set of tools and platforms I reach for when building modern, performant applications.
+               <div className="tit-inner">
+                    <h2 className='skills-tit'>Skills</h2>
+                    <p className='skills-txt'>현대적이고 성능 좋은 애플리케이션을 <br/>
+                       만들기 위해 사용하는 기술 
                     </p>
-                </header>
+               </div> 
                 <div className="grid">
                     {skillCategories.map((cat, index) => {
                         const IconCmp = CATEGORY_ICONS[cat.iconKey] ?? icons.monitor

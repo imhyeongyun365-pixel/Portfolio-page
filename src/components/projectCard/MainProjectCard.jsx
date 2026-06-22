@@ -1,29 +1,34 @@
 import React from 'react'
-import './ProjectCard.scss'
+import './MainProjectCard.scss'
 import Tag from '../tag/Tag'
 const ProjectCard = ({
     title,
     description,
     tags = [],
+    image,
     imageAlt = ''
 }) => {
     return (
-        <article className="card">
-            <div className="thumb" role='img' aria-label={imageAlt || title} />
-
-            <div className="body">
-                <div className="tags">
+        <article className="main-card">
+            <div className="main-thumb">
+                <img 
+                        src={image} 
+                        alt={imageAlt || title} 
+                    />
+            </div>
+            <div className="main-body">
+                <div className="main-tags">
                     {tags.map(({ label, variant }) => (
                         <Tag key={label} variant={variant}>
                             {label}
                         </Tag>
                     ))}
                 </div>
-                <h3 className="card-tit">{title}</h3>
-                <p className="desc">
+                <h3 className="main-card-tit">{title}</h3>
+                <p className="main-desc">
                     {description}
                 </p>
-                <div className="styles">
+                <div className="main-styles">
                     <button className='btn btn__primary btn__md'>
                             View
                     </button>

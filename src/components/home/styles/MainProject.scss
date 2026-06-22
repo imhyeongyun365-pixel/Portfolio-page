@@ -4,15 +4,17 @@
     
     
 
-    .inner {
-        
+    .inner.Mprojects-inner {
+        max-width: 160rem;
         background-color: var(--color-bg-muted);
         transition: $transition-theme;
         padding: $space-12 0;
         
-        .grid {
-            display: grid;
-            gap: $space-3;
+        .Main-grid {
+            
+            display: flex;
+            flex-direction: column;
+            gap: $space-5;
             margin-top: $space-3;
             grid-template-columns: 1fr;
             @media (min-width:768px){

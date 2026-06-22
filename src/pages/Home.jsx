@@ -5,7 +5,8 @@ import Header from '../components/home/Header'
 
 import Footer from '../components/home/Footer'
 import Skills from '../components/home/Skills'
-import Project from '../components/home/Project'
+import MiniProject from '../components/home/MiniProject'
+import MainProject from '../components/home/MainProject'
 import Contact from '../components/home/Contact'
 const Home = () => {
   
@@ -20,8 +21,11 @@ const Home = () => {
         <section id='Skills'>
           <Skills/>
         </section>
-        <section id='Project'>
-          <Project />
+        <section id='MiniProject'>
+          <MiniProject />
+        </section>
+        <section id='MainProject'>
+          <MainProject />
         </section>
         <section id='Contact'>
           <Contact />

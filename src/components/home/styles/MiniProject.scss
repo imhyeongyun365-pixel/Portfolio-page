@@ -1,0 +1,52 @@
+@use '../../../styles/themes' as *;
+
+    #MiniProject {
+        background: var(--color-bg);
+    }
+    
+    
+
+    .inner.projects-inner {
+        max-width: 160rem;
+        background: var(--color-bg);
+        transition: $transition-theme;
+        padding: $space-12 0;
+        
+        .grid {
+            display: grid;
+            gap: $space-3;
+            margin-top: $space-3;
+            grid-template-columns: 1fr;
+
+            .mini-card {
+                .mini-body {
+
+                    .mini-tags {
+                        font-size: $font-size-sm;
+                    }
+
+                    .mini-card-tit {
+                        font-size: $font-size-xl;
+                    }
+                    .desc {
+                        font-size: $font-size-md;
+                        color: var(--gray-600);
+                    }
+
+                    .mini-styles {
+                        display: flex;
+                        gap: $space-2;
+                    }
+                }
+            }
+
+            @media (min-width:768px){
+                grid-template-columns: repeat(2,1fr);
+                
+            }
+            @media (min-width:1024px){
+                grid-template-columns: repeat(3,1fr);
+                
+            }
+        }
+    }

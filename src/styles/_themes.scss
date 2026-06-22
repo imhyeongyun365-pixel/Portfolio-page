@@ -10,9 +10,10 @@ $font-size-lg: 1.8rem; // 18px
 $font-size-xl: 2rem; // 20px
 $font-size-2xl: 2.4rem; // 24px
 $font-size-3xl: 3.2rem; // 32px
+$font-size-4xl: 4.4rem; // 44px
 
 
-$space-0: 0.4rem; // 8px
+$space-0: 0.4rem; // 4px
 $space-1: 0.8rem; // 8px
 $space-2: 1.2rem; // 12px
 $space-3: 1.6rem; // 16px
@@ -70,7 +71,8 @@ $transition-theme: color 0.2s ease, background-color 0.2s ease,
 :root {
   color-scheme: light;
   --color-bg: #ffffff;
-  --color-bg-muted: #f9fafb;
+  --color-bg-muted: #F8FAFC;
+
   --color-text: #111827;
   --color-text-muted: #4b5563;
   --color-border: #e5e7eb;
@@ -84,7 +86,7 @@ $transition-theme: color 0.2s ease, background-color 0.2s ease,
   --color-info: #{$color-info};
   --color-warning: #{$color-warning};
 
-  --btn-primary-bg: var(--color-primary);
+  --btn-primary-bg: #4F46E5;
   --btn-primary-text: #ffffff;
   --btn-outline-border: var(--color-border);
   --btn-outline-text: var(--color-text);
@@ -114,6 +116,8 @@ $transition-theme: color 0.2s ease, background-color 0.2s ease,
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.35);
   --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.35);
 
+
+  --btn-primary-bg: #6366F1;
   --btn-outline-border: var(--color-border);
   --btn-outline-text: var(--color-text);
   --gray-50: #020617;

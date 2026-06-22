@@ -1,6 +1,7 @@
 @use '../../styles/themes' as *;
 
 .category_card {
+    
     padding: $space-3;
     border-radius: $radius-sm;
     background-color: var(--color-card-bg);

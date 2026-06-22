@@ -1,8 +1,9 @@
 import React from 'react'
-import './styles/Project.scss'
-import { projectList } from '../../utils/projectList'
+import './styles/MainProject.scss'
 import { motion as Motion, scale } from 'framer-motion'
-import ProjectCard from '../projectCard/ProjectCard'
+import { mainprojectList } from '../../utils/mainprojectList'
+import ProjectCard from '../projectCard/MainProjectCard'
+
 const containerVariants = {
   hidden: {},
   show: {
@@ -26,24 +27,28 @@ const itemVariants = {
   }
 }
 
+const MainProject = () => {
 
-const Project = () => {
+
   return (
-    
-      <div className="inner projects-inner">
+    <div className="inner Mprojects-inner">
 
-
-        
+       
         <h1 className="tit tit__">
-          MINI Project
+          Main Project
         </h1>
+
+       
+
+      
+        
         <Motion.div
           variants={containerVariants}
           initial="hidden"
           whileInView="show"
           viewport={{ amount: .2 }}
-          className="grid">
-          {projectList.map((p) => (
+          className="Main-grid">
+          {mainprojectList.map((p) => (
             <Motion.div
               key={p.title}
               variants={itemVariants}
@@ -53,14 +58,12 @@ const Project = () => {
                 {...p}
               />
 
-             
+    
             </Motion.div>
           ))}
         </Motion.div>
       </div>
-
-    
   )
 }
 
-export default Project
+export default MainProject
