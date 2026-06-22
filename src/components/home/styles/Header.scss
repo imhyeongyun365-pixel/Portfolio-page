@@ -6,10 +6,9 @@ header {
     width: 100%;
     transition: all .3s;
     padding: 0 .21rem;
-    border-bottom: 1px solid #1F2937;
+    border-bottom: 1px solid var(--gray200);
 
     .inner {
-        background: var(--color-bg-muted);
     }
 
     .fixed-top {
@@ -25,9 +24,8 @@ header {
     
     &.scroll {
         border-bottom: .1rem solid var(--gray200);
-        background-color:#ffffffb0;
         backdrop-filter: blur(10px);
-
+        background: rgba(var(--gray100), 0.2);
 
 
         .fixed-top {

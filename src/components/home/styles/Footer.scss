@@ -1,12 +1,14 @@
+@use '../../../styles/themes' as *;
 footer {
     background-color: var(--gray900);
 
     .inner {
         padding: 4rem 0;
-        width: 100%;
+        max-width: $breakpoint-xl;
         margin: auto;
         display: flex;
         justify-content: space-between;
+
         color: var(--gray100);
         font-size: clamp(1.2rem, 1.4vw, 1.6rem);
 
