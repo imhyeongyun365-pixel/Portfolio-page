@@ -1,9 +1,14 @@
+@use '../../../styles/themes' as *;
+
+
 .inner.hero-inner {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     gap: 10rem;
+    background: var(--color-bg-muted);
+    
     
 
     .intro-me {
@@ -88,5 +93,26 @@
     }
 
 
+    .intro-btn {
+        display: flex;
+        gap: 15px;
+        margin-top: $space-5;
+
+        .myworkBtn {
+            background: var(--btn-primary-bg);
+            color: #fff;
+            font-size: $font-size-xl;
+            padding: $space-3 $space-4;
+            border-radius: $radius-sm;
+        }
+        
+        .mycallBtn {
+            border: 1px solid var(--gray-400);
+            border-radius: $radius-sm;
+            color: var(--gray-600);
+            font-size: $font-size-sm;
+            padding: $space-3 $space-4;
+        }
+    }
   
 }

@@ -4,8 +4,8 @@
     
     
 
-    .inner {
-        
+    .inner.Mprojects-inner {
+        max-width: 160rem;
         background-color: var(--color-bg-muted);
         transition: $transition-theme;
         padding: $space-12 0;

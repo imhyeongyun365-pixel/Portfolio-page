@@ -39,7 +39,7 @@ const socialList = [
 
 const Contact = () => {
   return (
-    <section className="contact section" id="contact">
+    
       <div className="inner contact-inner">
         <div className="contact-title-box">
           <h2 className="contact-title">CONTACT</h2>
@@ -128,7 +128,7 @@ const Contact = () => {
           </form>
         </div>
       </div>
-    </section>
+    
   )
 }
 

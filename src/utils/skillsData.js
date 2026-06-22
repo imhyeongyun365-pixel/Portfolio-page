@@ -40,9 +40,10 @@ export const skillCategories = [
         title: '클라우드 & 데브옵스',
         subtitle: '서버',
         skills: [
-            { name: 'Docker', percent: 88, showPercent: false },
-            { name: 'AWS / Vercel', percent: 82, showPercent: false },
-            { name: 'GitHub', percent: 90, showPercent: false },
+            { name: 'Docker', percent: 88 },
+            { name: 'AWS', percent: 82 },
+            { name: 'GitHub', percent: 90 },
+            { name: 'Vercel', percent: 80 },
             
         ],
         tags: ['Docker', 'GitHub', 'AWS', 'Vercel'],

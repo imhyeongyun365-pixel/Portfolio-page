@@ -1,3 +1,5 @@
+@use '../../../styles/themes' as *;
+
 header {
     position: fixed;
     z-index: 5;
@@ -5,6 +7,10 @@ header {
     transition: all .3s;
     padding: 0 .21rem;
     border-bottom: 1px solid #1F2937;
+
+    .inner {
+        background: var(--color-bg-muted);
+    }
 
     .fixed-top {
         position: fixed;
@@ -43,6 +49,11 @@ header {
 
         h4 {
             font-size: clamp(1.8rem, 2.2vw, 2.4rem);
+            background: var(--color-primary);
+            padding: $space-2 $space-1;
+            border-radius: 25%;
+            color: #fff;
+            
         }
 
         .right-wrap {

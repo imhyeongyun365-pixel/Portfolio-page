@@ -16,6 +16,7 @@
         aspect-ratio: 16 / 10;
         width: 100%;
         overflow: hidden;
+        border-radius: $radius-md;
         background: linear-gradient(
             135deg,
             var(--color-bg-muted),
@@ -28,6 +29,7 @@
     .mini-body {
         display: flex;
         flex: 1;
+        margin-top: $space-4;
         flex-direction: column;
         gap:$space-1;
         padding:$space-3;

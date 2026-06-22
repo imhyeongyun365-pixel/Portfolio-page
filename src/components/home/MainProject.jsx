@@ -31,7 +31,7 @@ const MainProject = () => {
 
 
   return (
-    <div className="inner projects-inner">
+    <div className="inner Mprojects-inner">
 
        
         <h1 className="tit tit__">
