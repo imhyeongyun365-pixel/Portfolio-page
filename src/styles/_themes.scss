@@ -1,6 +1,7 @@
 @import url(https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css);
+
 $base-unit: 1rem; // 10px 기준
-$font-sans: 'SUIT Variable', 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+$font-sans: 'Inter','SUIT Variable', system-ui, -apple-system, 'Segoe UI', sans-serif;
 
 $font-size-xs: 1.2rem; // 12px
 $font-size-sm: 1.4rem; // 14px
